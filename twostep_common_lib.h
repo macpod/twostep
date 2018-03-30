@@ -158,8 +158,8 @@ along with Lasershark. If not, see <http://www.gnu.org/licenses/>.
 uint8_t twostep_cmd_len(uint8_t cmd);
 uint8_t twostep_resp_len(uint8_t cmd);
 
-inline void twostep_insert_start_token(uint8_t *buf);
-inline bool twostep_verify_start_token(uint8_t *buf);
+void twostep_insert_start_token(uint8_t *buf);
+bool twostep_verify_start_token(uint8_t *buf);
 
 bool twostep_insert_cmd_end_tokens(uint8_t *ret_buf);
 bool twostep_verify_cmd_end_tokens(uint8_t *buf);

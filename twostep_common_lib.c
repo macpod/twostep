@@ -152,13 +152,13 @@ uint8_t twostep_resp_len(uint8_t cmd)
 }
 
 
-inline void twostep_insert_start_token(uint8_t *buf)
+void twostep_insert_start_token(uint8_t *buf)
 {
     buf[0] = TWOSTEP_START_TOKEN;
 }
 
 
-inline bool twostep_verify_start_token(uint8_t *buf)
+bool twostep_verify_start_token(uint8_t *buf)
 {
     return buf[0] == TWOSTEP_START_TOKEN;
 }
